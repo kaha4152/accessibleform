@@ -4,12 +4,6 @@
 <meta charset="utf-8" />
 <title>Forms Exercise One - labels and more</title>
  <link rel="stylesheet"  href="css/form.css" />  
-
- 
- 
-
-
-   
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -23,36 +17,42 @@
 
 <div id="formcol1">
 
-
- <h2>Proposal Form</h2>
- <h3>Speaker Info</h3>
- <ul>
+<h2>Proposal Form</h2>
+<fieldset>
+<legend>Speaker Info</legend>
+    <li>
+	<label for="fstspkr1">First Name:</label>
+	<input id="fstspkr1" name="fstspkr1" type="text" class="reqfield"
+	title="Required field" />
+	</li>
+	
 	<li>
-        <span>*First Name:</span>
-        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" title="Required field" />
-    </li>
+	<label for="lstname1">Last Name:</label>
+	<input id="lstname1" name="lstname1" type="text" class="reqfield"
+	title="Required field" />
+	</li>
 
+	<li>
+	<label for="spkrtitle1">Title:</label>
+	<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48"/>
+	</li>
 
- 	<li><span>*Last Name:</span>
-        <input id="lstname1" name="lstname1" type="text" class="reqfield" title="Required field" />
-</li>
-<li>
-	<span>Title:</span>
-	<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
-</li>
-<li>
-	<span>Company:</span>
-	<input id="company1" name="company1" type="text" />
-</li>
-<li>
-	<span>Department:</span>
-	<input id="department1" name="department1" type="text"  />
-</li>
-<li>
-	<span>*Address:</span>
-	<input id="address1" class="reqfield" name="address1" type="text" title="Required field" />
-</li>
-</ul>
+	<li>
+	<label for="company1">Company:</label>
+	<input id="company1" name="company1" type="text"/>
+	</li>
+
+	<li>
+	<label for="department1">Department:</label>
+	<input id="department1" name="department1" type="text"/>
+	</li>
+
+	<li>
+	<label for="address1">Address:</label>
+	<input id="address1" name="address1" type="text" class="reqfield"
+	title="Required field" />
+	</li>
+</fieldset>
 
 </div> <!-- end of formcol1 div -->
     <div id="multchoice">
