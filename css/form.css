@@ -7,54 +7,55 @@
     margin-left: 4%;
 }
 
+/* Ensure everything inside formcol1 is left-aligned */
 div#formcol1 {
     float: left;
     width: 100%;
-}
-
-/* Remove gray background from labels */
-div#formcol1 label {
-    float: left;
-    width: 8.3em;
     text-align: left;
-    display: block;
-    padding-right: 0.5em;
-    background: none; /* Removes gray background */
-    clear: right;
 }
 
-/* Properly position bullet points to the left */
+/* Fix label positioning & remove background */
+div#formcol1 label {
+    display: inline-block;
+    width: 8.3em; /* Keeps label width consistent */
+    text-align: left;
+    padding-right: 0.5em;
+    background: none;
+}
+
+/* Ensure bullet points appear to the left */
 div#formcol1 ul {
     padding-left: 1.5em;
 }
 
 div#formcol1 ul li {
-    list-style-type: disc; /* Ensures bullet points appear */
+    list-style-type: disc; /* Ensures bullets are visible */
     list-style-position: outside; /* Moves bullets to the left */
-    margin-left: 0; /* Aligns properly */
+    margin-left: 0; /* Keeps aligned to the left */
     padding-left: 0;
+    display: flex;
+    align-items: center;
 }
 
-/* Input styling */
+/* Keep inputs close to the labels */
 div#formcol1 input {
-    margin-left: 0.5em;
+    margin-left: 0;
     text-align: left;
-    display: block;
-    clear: right;
+    display: inline-block;
     background-color: #F4F4F4;
 }
 
-/* Reduce width of fieldset box */
+/* Adjust fieldset box size */
 fieldset {
-    max-width: 40%; /* Makes the box smaller */
+    max-width: 40%;
     padding: 10px;
-    margin: auto; /* Centers fieldset */
+    margin-left: 0; /* Aligns to the very left */
 }
 
-/* Radio buttons and checkboxes */
+/* Adjust radio buttons & checkboxes */
 #multchoice {
     clear: left;
-    margin-left: 1%;
+    margin-left: 0;
 }
 
 #multchoice input,
@@ -66,11 +67,11 @@ fieldset {
     margin: 0 0.3em;
 }
 
-/* Submit button styling */
+/* Fix submit button positioning */
 .submit-button {
     margin: 2em 0;
-    float: right;
-    width: 70%;
+    float: left; /* Moves to the left */
+    width: auto;
 }
 
 /* end of form css */
