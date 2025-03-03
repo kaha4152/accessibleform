@@ -12,45 +12,41 @@ div#formcol1 {
     width: 100%;
 }
 
-/* Align labels to the right */
+/* Remove gray background from labels */
 div#formcol1 label {
     float: left;
     width: 8.3em;
-    text-align: right; /* Aligns label text to the right */
+    text-align: left;
     display: block;
     padding-right: 0.5em;
-    background: #E0E0DD;
+    background: none; /* Removes gray background */
     clear: right;
 }
 
-/* Adjust bullet points */
+/* Properly position bullet points to the left */
 div#formcol1 ul {
-    padding-left: 1em; /* Adds space to the left */
+    padding-left: 1.5em;
 }
 
 div#formcol1 ul li {
-    list-style-position: inside; /* Ensures bullets are inside */
-    margin-left: -1.5em; /* Moves text slightly left */
-    display: flex;
-    align-items: center;
-}
-
-div#formcol1 ul li::marker {
-    content: "• "; /* Ensures bullets show */
+    list-style-type: disc; /* Ensures bullet points appear */
+    list-style-position: outside; /* Moves bullets to the left */
+    margin-left: 0; /* Aligns properly */
+    padding-left: 0;
 }
 
 /* Input styling */
 div#formcol1 input {
-    margin-left: 1.5em;
+    margin-left: 0.5em;
     text-align: left;
     display: block;
     clear: right;
     background-color: #F4F4F4;
 }
 
-/* Fieldset Box Styling - Fix width issue */
+/* Reduce width of fieldset box */
 fieldset {
-    max-width: 50%; /* Reduces width */
+    max-width: 40%; /* Makes the box smaller */
     padding: 10px;
     margin: auto; /* Centers fieldset */
 }
