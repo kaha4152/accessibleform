@@ -1,79 +1,80 @@
 @charset "ISO-8859-1";
 
-
-
-
 /* form styling */
 
-
 #wrapper {
-	width: 60%;
-	margin-left:4%;
+    width: 60%;
+    margin-left: 4%;
 }
 
 div#formcol1 {
-	
-	float:left;	
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
-div#label {
-	float:left;
-	margin-right: .3em;
-	width: 4em; 
-}
-
+/* Align labels to the right */
 div#formcol1 label {
-	float:left;
-	width:8.3em;
-	text-align:left;
-	display:block;
-	padding-right:.3em;	
-	background:#E0E0DD;
-	clear:right;
-	}
-	
+    float: left;
+    width: 8.3em;
+    text-align: right; /* Aligns label text to the right */
+    display: block;
+    padding-right: 0.5em;
+    background: #E0E0DD;
+    clear: right;
+}
+
+/* Adjust bullet points */
+div#formcol1 ul {
+    padding-left: 1em; /* Adds space to the left */
+}
 
 div#formcol1 ul li {
-	list-style-type:none;
-	margin-left:-2em;
-	margin-bottom:.4em;
-	}
+    list-style-position: inside; /* Ensures bullets are inside */
+    margin-left: -1.5em; /* Moves text slightly left */
+    display: flex;
+    align-items: center;
+}
 
-	
+div#formcol1 ul li::marker {
+    content: "• "; /* Ensures bullets show */
+}
+
+/* Input styling */
 div#formcol1 input {
-	
-	margin-left:1.5em;
-	text-align:left;
-	display:block;
-	clear:right;
-	background-color:#F4F4F4;
-	}
+    margin-left: 1.5em;
+    text-align: left;
+    display: block;
+    clear: right;
+    background-color: #F4F4F4;
+}
 
+/* Fieldset Box Styling - Fix width issue */
+fieldset {
+    max-width: 50%; /* Reduces width */
+    padding: 10px;
+    margin: auto; /* Centers fieldset */
+}
 
-/* div for radio buttons and check boxes */
-
+/* Radio buttons and checkboxes */
 #multchoice {
-	clear:left;
-	margin-left:1%;	
+    clear: left;
+    margin-left: 1%;
 }
 
-#multchoice input, #multchoice span {
-	float:left;
+#multchoice input,
+#multchoice span {
+    float: left;
 }
 
-#multchoice span {	
-	margin: 0 .3em;
+#multchoice span {
+    margin: 0 0.3em;
 }
 
+/* Submit button styling */
 .submit-button {
-	margin:2em 0;
-	float:right;
-	width:70%;
+    margin: 2em 0;
+    float: right;
+    width: 70%;
 }
-
-
-		
 
 /* end of form css */
-	
