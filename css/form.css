@@ -17,11 +17,11 @@ div#formcol1 {
 	width: 100%;
 }
 
-label {
+/*label {
 	float:left;
 	margin-right: .3em;
 	width: 8.3em; 
-}
+}*/
 
 div#formcol1 label {
 	float:left;
